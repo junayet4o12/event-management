@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "name": "Wedding Planning",
+      "title": "Professional Wedding Planning Services for Your Special Day",
+      "description": "Our wedding planning service is dedicated to making your special day truly magical. From venue selection to personalized decor and catering, we handle every detail to create the wedding of your dreams. Let us turn your love story into a perfect celebration.",
+      "img": "https://i.ibb.co/JQF8LVZ/wedding.jpg",
+      "bg-color": "#F5E1DA",
+      "text-color": "#333333",
+      "button-bg": "#FFA500",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Birthday Parties",
+      "title": "Exceptional Birthday Party Planning Services for All Ages",
+      "description": "Transform ordinary birthdays into extraordinary memories with our birthday party planning. From themed decorations and fun activities to delicious cakes and entertainment, we create joyous celebrations for all ages.",
+      "img": "https://i.ibb.co/VmfTDbW/birthday.jpg",
+      "bg-color": "#E1EAF5",
+      "text-color": "#333333",
+      "button-bg": "#FF69B4",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Funeral Arrangements",
+      "title": "Compassionate Funeral Event Management Services in Challenging Times",
+      "description": "During challenging times, our funeral event management service offers compassionate support. We handle all logistics with utmost care and respect, allowing you to focus on honoring your loved one's memory.",
+      "img": "https://i.ibb.co/KNrBrhv/funeral.jpg",
+      "bg-color": "#E8E8E8",
+      "text-color": "#333333",
+      "button-bg": "#4682B4",
+      "rating": 4.2
+    },
+    {
+      "id": 4,
+      "name": "Cultural Events",
+      "title": "Celebrate Diversity with Vibrant Cultural Event Management",
+      "description": "Celebrate diversity and cultural richness through our cultural event management. We curate vibrant experiences that bring communities together, featuring traditional music, dance, cuisine, and more.",
+      "img": "https://i.ibb.co/b2wwmXW/cultural.jpg",
+      "bg-color": "#FFD700",
+      "text-color": "#333333",
+      "button-bg": "#4CAF50",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "name": "Themed Costume Parties",
+      "title": "Immerse Yourself in Fantasy with Themed Costume Party Management",
+      "description": "Let your imagination run wild with our themed costume parties. Whether it's a historical era, favorite movie, or fantasy world, we create immersive experiences where guests can dress up and have a blast.",
+      "img": "https://i.ibb.co/2yhzJ91/themedress.jpg",
+      "bg-color": "#FCE4EC",
+      "text-color": "#333333",
+      "button-bg": "#9370DB",
+      "rating": 4.9
+    },
+    {
+      "id": 6,
+      "name": "Corporate Conferences",
+      "title": "Elevate Your Corporate Events with Comprehensive Conference Management",
+      "description": "Elevate your corporate events with our conference management. We provide comprehensive services, including venue selection, agenda planning, audiovisual setups, and networking opportunities, ensuring your conference achieves its goals.",
+      "img": "https://i.ibb.co/pJJGCRV/confarence.jpg",
+      "bg-color": "#E0F7FA",
+      "text-color": "#333333",
+      "button-bg": "#FF5722",
+      "rating": 4.4
+    }
+  ]
+  
