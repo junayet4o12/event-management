@@ -22,9 +22,9 @@ const Services = ({ services }) => {
             }}>
                 <div className="hero-content flex-col md:flex-row">
                     <img className="w-[300px] sm:w-[350px] md:w-[380px] lg:w-[400px]" src={img} />
-                    <div className="p-5 sm:p-0">
+                    <div className="p-2 sm:p-0">
                         <div className="">
-                            <h1 className="text-4xl font-bold ">{name}</h1>
+                            <h1 className="text-3xl font-bold ">{name}</h1>
                             <p className="py-6 font-medium">{description.slice(0, 200)}.....</p>
                             <div className="text-end">
                                 <Link to={`/details/${id}`}>
