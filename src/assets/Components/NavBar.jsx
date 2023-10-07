@@ -12,7 +12,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className="navbar bg-[#00000046]">
+            <div className="navbar bg-[#00000063]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -22,7 +22,7 @@ const NavBar = () => {
                             {navli}
                         </ul>
                     </div>
-                    <img className='w-[80px]' src={logo} alt="" />
+                    <img className='w-[100px]' src={logo} alt="" />
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className="hello2 flex flex-wrap gap-5 text-white font-medium text-sm">

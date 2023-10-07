@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/a11y';
 
-import { EffectCube } from 'swiper/modules';
+import { EffectFade } from 'swiper/modules';
 
 
 
@@ -22,15 +22,15 @@ import img6 from '../banner6.jpg'
 const Banner = () => {
 
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto '>
 
             <div >
                 <Swiper
-                    modules={[Navigation,  Scrollbar, A11y, EffectCube, Autoplay]}
+                    modules={[Navigation,  Scrollbar, A11y, EffectFade, Autoplay]}
                     spaceBetween={50}
                     slidesPerView={1}
                     navigation
-                    effect="cube"
+                    effect="fade"
                     
                     scrollbar={{ draggable: true }}
                     speed={1000}
