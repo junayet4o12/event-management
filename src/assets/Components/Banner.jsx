@@ -1,3 +1,17 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { Navigation, Scrollbar, A11y,Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/bundle';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/a11y';
+
+import { EffectCube } from 'swiper/modules';
+
+
+
 
 import img1 from '../banner1.jpg'
 import img2 from '../banner2.jpg'
@@ -9,52 +23,31 @@ const Banner = () => {
 
     return (
         <div className='max-w-7xl mx-auto'>
-            <div className="carousel w-full md:h-[450px] lg:h-[575px]">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img src={img1} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❮</a>
-                        <a href="#slide2" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img src={img2} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❮</a>
-                        <a href="#slide3" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img src={img3} className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❮</a>
-                        <a href="#slide4" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" className="carousel-item relative w-full">
-                    <img src={img4} className="w-full" />
-                    <div className="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2  ">
-                        <a href="#slide3" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❮</a>
-                        
-                        <a href="#slide5" className="btn btn-circle  bg-[#0000005a] text-white hover:text-black">❯</a>
-                    </div>
-                </div>
-                <div id="slide5" className="carousel-item relative w-full">
-                    <img src={img5} className="w-full" />
-                    <div className="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2  ">
-                        <a href="#slide4" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❮</a>
-                        
-                        <a href="#slide6" className="btn btn-circle  bg-[#0000005a] text-white hover:text-black">❯</a>
-                    </div>
-                </div>
-                <div id="slide6" className="carousel-item relative w-full">
-                    <img src={img6} className="w-full" />
-                    <div className="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2  ">
-                        <a href="#slide5" className="btn btn-circle bg-[#0000005a] text-white hover:text-black">❮</a>
-                        
-                        <a href="#slide1" className="btn btn-circle  bg-[#0000005a] text-white hover:text-black">❯</a>
-                    </div>
-                </div>
+
+            <div >
+                <Swiper
+                    modules={[Navigation,  Scrollbar, A11y, EffectCube, Autoplay]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    navigation
+                    effect="cube"
+                    
+                    scrollbar={{ draggable: true }}
+                    speed={1000}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+
+                >
+                    <SwiperSlide><img src={img1} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={img2} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={img3} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={img4} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={img5} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={img6} alt="" /></SwiperSlide>
+
+                </Swiper>
             </div>
         </div>
     );

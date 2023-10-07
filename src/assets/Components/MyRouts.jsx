@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import LayOut from "./LayOut";
 import Home from "./Home";
+import Details from "./Details";
 
 const MyRouts = createBrowserRouter([
     {
@@ -14,6 +15,11 @@ const MyRouts = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/details/:id',
+                loader : ()=> fetch('./data.json'),
+                element: <Details></Details>
             }
         ]
     },

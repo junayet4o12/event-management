@@ -1,7 +1,16 @@
-li .active{
+.hello2 .active{
     
     font-weight: bold;
     background: linear-gradient(to top left, #f17807, #eae618);
     padding: 8px 12px;
     border-radius: 5px;
+}
+.hello .active{
+    
+    font-weight: bold;
+    
+    background: linear-gradient(to top left, #f17807, #eae618);
+    padding: 8px 12px;
+    border-radius: 2px;
+    
 }
