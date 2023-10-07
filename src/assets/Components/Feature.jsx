@@ -36,8 +36,8 @@ const Feature = () => {
     const textcolor6 = { color: colour6 }
     return (
         <div className='mb-10'>
-            <h2 className="text-6xl font-bold text-center">About Us</h2>
-            <div className="flex gap-6 flex-col md:flex-row p-4">
+            <h2 className="text-6xl font-bold text-center mb-7">About Us</h2>
+            <div className="flex gap-6 justify-center items-center flex-col md:flex-row p-4">
                 <div className="md:w-1/3">
                     <div className='max-w-md mx-auto'>
                         <h3 className="text-xl text-gray-500 font-medium mb-4 mx-auto">WE ARE EVENT RAP</h3>
@@ -48,37 +48,37 @@ const Feature = () => {
 
                 <div className="md:w-2/3 flex flex-wrap justify-center items-center gap-5 ">
                     {/* div1 */}
-                    <div className="w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000   shadow-xl hover:shadow-2xl" onMouseOver={handlecolor} onMouseLeave={handlprecolor}>
+                    <button className="btn bg-white w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000   shadow-xl hover:shadow-2xl" onMouseOver={handlecolor} onMouseLeave={handlprecolor}>
                         <p className='text-5xl '><FaHandshake></FaHandshake></p>
                         <h2 style={textcolor} className='font-medium text-lg'>Friendly Team</h2>
                         <p style={textcolor} className='text-sm' >More than 200 teams</p>
-                    </div>
+                    </button>
                     {/* div2 */}
-                    <div className="w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor2} onMouseLeave={handlprecolor2}>
+                    <div className="btn bg-white w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor2} onMouseLeave={handlprecolor2}>
                         <p className='text-5xl '><GiBalloons></GiBalloons></p>
                         <h2 style={textcolor2} className='font-medium text-lg'>Perfect Veneues</h2>
                         <p style={textcolor2} className='text-sm'>Perfect Veneues</p>
                     </div>
                     {/* div3 */}
-                    <div className="w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000  shadow-xl hover:shadow-2xl" onMouseOver={handlecolor3} onMouseLeave={handlprecolor3}>
+                    <div className="btn bg-white w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000  shadow-xl hover:shadow-2xl" onMouseOver={handlecolor3} onMouseLeave={handlprecolor3}>
                         <p className='text-5xl '><FaChampagneGlasses></FaChampagneGlasses></p>
                         <h2 style={textcolor3} className='font-medium text-lg'>Unique Scenario</h2>
                         <p style={textcolor3} className='text-sm text-center'>We thinking out of the box</p>
                     </div>
                     {/* div4 */}
-                    <div className="w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor4} onMouseLeave={handlprecolor4}>
+                    <div className="btn bg-white w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor4} onMouseLeave={handlprecolor4}>
                         <p className='text-5xl '><FaHatWizard></FaHatWizard></p>
                         <h2 style={textcolor4} className='font-medium text-lg'>Unforgettable Time</h2>
                         <p style={textcolor4} className='text-sm'>We make you perfect event</p>
                     </div>
                     {/* div5 */}
-                    <div className="w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor5} onMouseLeave={handlprecolor5}>
+                    <div className="btn bg-white w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor5} onMouseLeave={handlprecolor5}>
                         <p className='text-5xl '><IoLogoWhatsapp></IoLogoWhatsapp></p>
                         <h2 style={textcolor5} className='font-medium text-lg'>24/7 hours support</h2>
                         <p style={textcolor5} className='text-sm'>Any time anywhere</p>
                     </div>
                     {/* div6 */}
-                    <div className="w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor6} onMouseLeave={handlprecolor6}>
+                    <div className="btn bg-white w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000 shadow-xl hover:shadow-2xl" onMouseOver={handlecolor6} onMouseLeave={handlprecolor6}>
                         <p className='text-5xl '><FaLightbulb></FaLightbulb></p>
                         <h2 style={textcolor6} className='font-medium text-lg'>Brilliant Idea</h2>
                         <p style={textcolor6} className='text-sm'>We have million idea</p>

@@ -18,7 +18,7 @@ const MyRouts = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                loader : ()=> fetch('./data.json'),
+                loader : ()=> fetch('/data.json'),
                 element: <Details></Details>
             }
         ]

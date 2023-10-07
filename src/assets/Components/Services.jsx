@@ -4,11 +4,9 @@
 import { Link } from "react-router-dom";
 
 const Services = ({ services }) => {
-    const { id, name, title, description, img, bg_color, text_color, button_bg, rating, margin } = services;
+    const { id, name,  description, img, bg_color,  button_bg,  margin } = services;
 
-    const bgcolor = {
-        backgroundColor: bg_color
-    }
+   
     const btncolor = {
         backgroundColor: button_bg
     }
