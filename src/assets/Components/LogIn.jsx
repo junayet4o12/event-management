@@ -1,7 +1,7 @@
 // import React from 'react';
 
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import Swal from "sweetalert2";
 import { FaGoogle } from 'react-icons/fa';
@@ -9,6 +9,7 @@ const LogIn = () => {
     const [doneorerror, setdoneorerror] = useState('')
     const { loginuser, googlelogin } = useContext(AuthContext);
     const navigate= useNavigate()
+    const location = useLocation()
     const handlesubmit = (e) => {
         e.preventDefault()
         setdoneorerror('');
@@ -23,11 +24,12 @@ const LogIn = () => {
                     icon: 'success',
                     title: 'Log In Successfully',
                     showConfirmButton: false,
-                    timer: 1000
+                    timer: 1500
                 })
                 
                 e.target.reset();
-                navigate('/')
+                
+                navigate(location?.state ? location?.state : '/')
             })
             .catch(error => {
                 console.log(error);
@@ -44,11 +46,11 @@ const LogIn = () => {
                     icon: 'success',
                     title: 'User Created Successfully',
                     showConfirmButton: false,
-                    timer: 1000
+                    timer: 1500
                 })
 
                 
-                navigate('/')
+                navigate(location?.state ? location?.state : '/')
             })
             .catch(error => {
                 console.log(error);

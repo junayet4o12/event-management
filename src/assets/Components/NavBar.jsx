@@ -39,7 +39,7 @@ const NavBar = () => {
                             <div className='mr-5  flex flex-col justify-center items-center'>
                                 <div className='w-10 h-10 rounded-full '><img className='w-full h-full rounded-full ' src={user.photoURL ? user?.photoURL : userpic
 } alt="" /></div>
-                                <p className='text-white font-bold font-sm'>{user?.displayName.split(' ')[0] || 'Undefined'}</p>
+                                <p className='text-white font-bold font-sm'>{user?.displayName?.split(' ')[0] || 'Undefined'}</p>
                             </div>
                             <button onClick={() => logout()} className="btn bg-gradient-to-br from-[#eae751] to-[#f17807] text-white font-bold border-none px-5">log out</button>
 
