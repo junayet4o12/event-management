@@ -44,7 +44,7 @@ const Feature = () => {
         <div className='mb-10 max-w-7xl mx-auto' >
             <h2 className="text-6xl font-bold text-center mb-7" data-aos = "fade-up">About Us</h2>
             <div className="flex gap-6 justify-center items-center flex-col md:flex-row p-4">
-                <div className="md:w-1/3" data-aos="fade-up-left">
+                <div className="md:w-1/3" data-aos="flip-left">
                     <div className='max-w-md mx-auto'>
                         <h3 className="text-xl text-gray-500 font-medium mb-4 mx-auto">WE ARE EVENT RAP</h3>
                         <h1 className="text-4xl font-medium"><span className="font-bold">No.1</span>  Events Management</h1>
@@ -52,7 +52,7 @@ const Feature = () => {
                     </div>
                 </div>
 
-                <div className="md:w-2/3 flex flex-wrap justify-center items-center gap-5 "  data-aos="fade-up-right">
+                <div className="md:w-2/3 flex flex-wrap justify-center items-center gap-5 "  data-aos="flip-right">
                     {/* div1 */}
                     <button className="btn bg-white w-[200px] h-[200px] flex flex-col cursor-pointer justify-center items-center gap-2 rounded-md text-orange-500 hover:text-white hover:bg-gradient-to-br hover:from-[#ecbd22] hover:to-[#f17807] transition-all duration-1000   shadow-xl hover:shadow-2xl" onMouseOver={handlecolor} onMouseLeave={handlprecolor}>
                         <p className='text-5xl '><FaHandshake></FaHandshake></p>

@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 
 const LayOut = () => {
     return (
-        <div className="overflow-x-hidden">
+        <div className="">
             <div className="sticky top-0 z-40">
                 <div className="absolute w-full">
                     <NavBar></NavBar>
