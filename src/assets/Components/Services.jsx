@@ -4,7 +4,7 @@
 import { Link } from "react-router-dom";
 
 const Services = ({ services }) => {
-    const { id, name,  description, img, bg_color,  button_bg,  margin } = services;
+    const { id, name,  description, img, bg_color,  button_bg,  margin, price } = services;
 
    
     const btncolor = {
@@ -23,6 +23,7 @@ const Services = ({ services }) => {
                     <div className="p-2 sm:p-0">
                         <div className="">
                             <h1 className="text-3xl font-bold ">{name}</h1>
+                            <h1 className="text-xl font-medium mt-4">Price:<span className="font-semibold"> {price} $</span></h1>
                             <p className="py-6 font-medium">{description.slice(0, 200)}.....</p>
                             <div className="text-end">
                                 <Link to={`/details/${id}`}>

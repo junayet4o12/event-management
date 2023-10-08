@@ -35,7 +35,7 @@ const Feature = () => {
     const handlprecolor6 = () => { setcolour6('black') }
     const textcolor6 = { color: colour6 }
     return (
-        <div className='mb-10'>
+        <div className='mb-10 max-w-7xl mx-auto'>
             <h2 className="text-6xl font-bold text-center mb-7">About Us</h2>
             <div className="flex gap-6 justify-center items-center flex-col md:flex-row p-4">
                 <div className="md:w-1/3">

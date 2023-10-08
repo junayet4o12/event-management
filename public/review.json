@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "photo_url": "https://i.ibb.co/FbSy9wr/client1.jpg",
+        "passion": "Adventurous",
+        "review": "Exceptional service! From the moment we embarked on our adventure, their attention to detail and commitment to ensuring we had an incredible experience was evident. The guides were knowledgeable and friendly, and the entire trip was seamless. We can't wait to go on another adventure with them.",
+        "rating": 5,
+        "bg_color": "#6B7280"
+    },
+    {
+        "id": 2,
+        "name": "Michael Johnson",
+        "photo_url": "https://i.ibb.co/FYKM32r/client2.jpg",
+        "passion": "Culinary",
+        "review": "Perfectly executed cooking class. Our guests had a delicious time learning the art of culinary delights. The chef's expertise and the quality of ingredients were outstanding. It was a delightful experience that left everyone craving for more.",
+        "rating": 4.8,
+        "bg_color": "#EF4444"
+    },
+    {
+        "id": 3,
+        "name": "Alice Davis",
+        "photo_url": "https://i.ibb.co/ch78QMH/client3.jpg",
+        "passion": "Wanderlust",
+        "review": "Outstanding travel planning. Highly professional and efficient. Our dream vacation became a reality, thanks to their meticulous planning and attention to detail. Every aspect of our trip was well-organized, and we could truly relax and enjoy our adventure.",
+        "rating": 4.5,
+        "bg_color": "#60A5FA"
+    },
+    {
+        "id": 4,
+        "name": "Emily Wilson",
+        "photo_url": "https://i.ibb.co/qDDyr0V/client4.jpg",
+        "passion": "Green-Thumbed",
+        "review": "They helped us design our garden beautifully. Great attention to detail in every aspect of the garden's layout, plant selection, and landscaping. Our outdoor space has been transformed into a tranquil oasis.",
+        "rating": 4.7,
+        "bg_color": "#10B981"
+    },
+    {
+        "id": 5,
+        "name": "David Brown",
+        "photo_url": "https://i.ibb.co/rdpBCc7/client5.jpg",
+        "passion": "Tech-Savvy",
+        "review": "Efficiently organized our tech seminar. Great insights and discussions that left our attendees inspired. They ensured everything ran smoothly, from setting up tech equipment to coordinating speakers and interactive sessions.",
+        "rating": 2.5,
+        "bg_color": "#F59E0B"
+    },
+    {
+        "id": 6,
+        "name": "Sophia Miller",
+        "photo_url": "https://i.ibb.co/5RKWGxQ/client6.jpg",
+        "passion": "Fit",
+        "review": "Memorable fitness event. Everything was well-organized and energetic. The workouts were challenging yet fun, and the trainers were motivating. It was a fantastic fitness experience that left everyone feeling rejuvenated and healthier.",
+        "rating": 4.9,
+        "bg_color": "#A5B4FC"
+    },
+    {
+        "id": 7,
+        "name": "William Taylor",
+        "photo_url": "https://i.ibb.co/NjcbJxR/client7.jpg",
+        "passion": "Artistic",
+        "review": "They organized our art exhibition beautifully. It was a masterpiece! The artwork was showcased elegantly, and the atmosphere was conducive to appreciating the art. A truly memorable artistic experience.",
+        "rating": 2.2,
+        "bg_color": "#B794F4"
+    },
+    {
+        "id": 8,
+        "name": "Olivia White",
+        "photo_url": "https://i.ibb.co/TM3mWbK/client8.webp",
+        "passion": "Photographic",
+        "review": "Organized our photography workshop flawlessly. A creative experience that allowed participants to explore their photographic skills. The instructors were knowledgeable, and the hands-on approach was highly educational.",
+        "rating": 4.6,
+        "bg_color": "#7DC3E8"
+    },
+    {
+        "id": 9,
+        "name": "Ella Turner",
+        "photo_url": "https://i.ibb.co/9qCWQbq/client9.webp",
+        "passion": "Starry-Eyed",
+        "review": "Exceptional stargazing event. We explored the cosmos like never before! The telescopes and astronomy experts made it an unforgettable night of stargazing and learning about the wonders of the universe.",
+        "rating": 1.8,
+        "bg_color": "#F59E0B"
+    },
+    {
+        "id": 10,
+        "name": "James Anderson",
+        "photo_url": "https://i.ibb.co/z4XHW5K/client10.jpg",
+        "passion": "Fashionable",
+        "review": "Terrible fashion show. Poor organization and lack of style. The event was a major disappointment, and the lack of coordination was evident. It fell far short of our expectations.",
+        "rating": 3.2,
+        "bg_color": "#10B981"
+    }
+]

@@ -1,18 +1,18 @@
 import React from 'react';
 import logo from '../logo1.png';
 import './Nav.css'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const NavBar = () => {
     const navli = <>
         <li><NavLink to='/'>HOME</NavLink></li>
-        <li><NavLink to='/selected'>SELECTED</NavLink></li>
-        <li><NavLink to='/register'>REGSITER</NavLink></li>
-        <li><NavLink to='/login'>LOGIN</NavLink></li>
+        <li><NavLink to='/purchased'>PURCHASED</NavLink></li>
+        <li><NavLink to='/contact'>CONTACT US</NavLink></li>
+        <li><NavLink to='/register'>REGISTER</NavLink></li>
     </>
 
     return (
-        <div>
-            <div className="navbar bg-[#00000063]">
+        <div className='bg-[#00000063]'>
+            <div className="navbar max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,7 +30,9 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-gradient-to-br from-[#eae751] to-[#f17807] text-white font-bold border-none px-5">log in</a>
+                    <Link to='/login'>
+                        <button className="btn bg-gradient-to-br from-[#eae751] to-[#f17807] text-white font-bold border-none px-5">log in</button>
+                    </Link>
                 </div>
             </div>
         </div>

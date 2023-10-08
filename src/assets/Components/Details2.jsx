@@ -4,29 +4,21 @@
 
 import { useState } from "react";
 import Rating from "react-rating";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { AiTwotoneStar, AiOutlineStar } from 'react-icons/ai';
-import { setdata } from "./localstorage/LocalStorage";
-import Swal from 'sweetalert2'
-const Details = () => {
+
+const Details2 = () => {
     const [seemore, setseemore] = useState(true);
     const data = useLoaderData();
     const { id } = useParams();
     const idint = parseInt(id);
     const card = data?.find(card => card?.id === idint)
-
+    const navigate = useNavigate()
     const handleseemore = () => {
         setseemore(!seemore);
     }
-    const handlepurchase = () =>{
-        setdata(idint);
-        Swal.fire({
-            position: 'top-center',
-            icon: 'success',
-            title: 'Purchase Completed',
-            showConfirmButton: false,
-            timer: 1000
-          })
+    const handlenavigate = () => {
+        navigate(-1)
     }
     const { name, title, description, img, bg_color, text_color, button_bg, rating, margin, price } = card;
     const bgcolor = {
@@ -45,6 +37,7 @@ const Details = () => {
                 <div className="text-center mb-7">
                     <h1 className="text-4xl font-bold mb-4">{name}</h1>
                     <h2 className="text-2xl font-medium">{title}</h2>
+                    <h2 className="text-2xl font-medium">{price} $</h2>
                 </div>
                 <div className=" ">
                     <img className="h-full rounded sm:h-[400px] mx-auto" src={img} alt="" />
@@ -67,7 +60,7 @@ const Details = () => {
                         seemore ? 'See more' : 'See less'
                     }</span>
                     <div>
-                        <button onClick={handlepurchase} className="btn text-white font-bold text-sm  border-none mt-7" style={btncolor}>Purchase {price} $</button>
+                        <button onClick={handlenavigate} className="btn text-white font-bold text-sm  border-none mt-7" style={btncolor}>Go Back</button>
                     </div>
                 </p>
 
@@ -76,4 +69,4 @@ const Details = () => {
     );
 };
 
-export default Details;
+export default Details2;

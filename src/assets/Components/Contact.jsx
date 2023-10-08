@@ -2,7 +2,7 @@
 
 const Contact = () => {
     return (
-        <div className="max-w-7xl mx-auto my-10">
+        <div className="max-w-7xl mx-auto py-14">
             <div className="p-4 sm:pl-10">
                 <h2 className="text-2xl font-medium text-gray-600">CONTACT US</h2>
                 <h1 className="text-5xl font-medium">Keep in touch <span className="font-bold">with Event Rap</span></h1>
