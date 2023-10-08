@@ -66,7 +66,7 @@ const LogIn = () => {
         <div className="pt-32 pb-7 flex flex-col justify-center items-center">
 
             <form onSubmit={handlesubmit}>
-                <div className="relative flex w-[300px] sm:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos = 'fade-right'>
+                <div className="relative flex w-[300px] sm:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos = 'fade-bottom'>
                     <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-orange-600 to-orange-400 bg-clip-border text-white shadow-lg shadow-orange-500/40">
                         <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
                             Sign In
