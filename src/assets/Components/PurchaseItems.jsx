@@ -5,6 +5,8 @@ import { getdata } from "./localstorage/LocalStorage";
 import { useEffect, useState } from "react";
 import Purchase from "./Purchase";
 import { TbMoodEmpty } from 'react-icons/tb';
+import Aos from "aos";
+import "aos/dist/aos.css";
 const PurchaseItems = () => {
     const [data, setdata] = useState([]);
     const [toggle , settoggle] = useState(true)
@@ -20,12 +22,15 @@ const PurchaseItems = () => {
         }
         setdata(newdata);
     }, [])
+    useEffect(() => {
+        Aos.init();
+      }, []);
     const handleseemore = () => {
        settoggle(!toggle);
     }
     return (
         <div className="py-20">
-            <h2 className="text-5xl font-bold text-center">Your Purchases Items</h2>
+            <h2 className="text-5xl font-bold text-center" data-aos="flip-left">Your Purchases Items</h2>
             <div className="flex flex-wrap justify-center items-center gap-7 p-4">
                 {
                     data.slice(0, toggle ? 3 : data.length).map(datum => <Purchase key={datum.id} datum={datum}></Purchase>)

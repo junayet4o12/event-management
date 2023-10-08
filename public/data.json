@@ -10,7 +10,9 @@
       "button_bg": "#D97706",
       "rating": 4.5,
       "margin": "marginRight",
-      "price": 5000
+      "price": 5000,
+      "fade": "fade-left"
+      
   },
   {
       "id": 2,
@@ -23,7 +25,8 @@
       "button_bg": "#F97316",
       "rating": 4.8,
       "margin": "marginLeft",
-      "price": 1500
+      "price": 1500,
+      "fade": "fade-right"
   },
   {
       "id": 3,
@@ -36,7 +39,8 @@
       "button_bg": "#4B5563",
       "rating": 4.2,
       "margin": "marginRight",
-      "price": 2000
+      "price": 2000,
+      "fade": "fade-left"
   },
   {
       "id": 4,
@@ -49,7 +53,8 @@
       "button_bg": "#C53030",
       "rating": 4.7,
       "margin": "marginLeft",
-      "price": 3000
+      "price": 3000,
+      "fade": "fade-right"
   },
   {
       "id": 5,
@@ -62,7 +67,8 @@
       "button_bg": "#1A365D",
       "rating": 4.9,
       "margin": "marginRight",
-      "price": 2500
+      "price": 2500,
+      "fade": "fade-left"
   },
   {
       "id": 6,
@@ -75,6 +81,7 @@
       "button_bg": "#047857",
       "rating": 4.4,
       "margin": "marginLeft",
-      "price": 1800
+      "price": 1800,
+      "fade": "fade-right"
   }
 ]

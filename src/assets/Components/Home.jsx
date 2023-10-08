@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Banner from "./Banner";
 
 import Feature from "./Feature";
@@ -7,14 +8,17 @@ import Service from "./Service";
 
 
 const Home = () => {
+
     return (
         <div className="">
             <Banner></Banner>
             <Service></Service>
             <Feature></Feature>
-            <Review></Review>
+            <div>
+                <Review></Review>
+            </div>
             <Footer></Footer>
-           
+
         </div>
     );
 };

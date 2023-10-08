@@ -1,22 +1,25 @@
 /* eslint-disable react/prop-types */
 // import React from 'react';
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import Swal from "sweetalert2";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Services = ({ services }) => {
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
+    useEffect(() => {
+        Aos.init();
+    }, []);
+    const { id, name, description, img, bg_color, button_bg, margin, price, fade } = services;
 
-    const { id, name,  description, img, bg_color,  button_bg,  margin, price } = services;
 
-   
     const btncolor = {
         backgroundColor: button_bg
     }
     const handlelogin = () => {
-        if(!user){
+        if (!user) {
             Swal.fire({
                 position: 'top-center',
                 icon: 'error',
@@ -27,7 +30,7 @@ const Services = ({ services }) => {
         }
     }
     return (
-        <div>
+        <div data-aos = {fade}>
             <div className="hero  w-full sm:max-w-5xl  sm:w-[90%] lg:w-[80%] h-max  mb-7 rounded" style={{
                 marginLeft: margin === 'marginLeft' ? 'auto' : 'unset',
                 marginRight: margin === 'marginRight' ? 'auto' : 'unset',

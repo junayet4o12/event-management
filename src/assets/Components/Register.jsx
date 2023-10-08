@@ -1,16 +1,21 @@
 // import React from 'react';
 
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import Swal from 'sweetalert2'
 import { updateProfile } from "firebase/auth";
 import auth from "./firebase/firebase.config";
 import { FaGoogle } from 'react-icons/fa';
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Register = () => {
     const [doneorerror, setdoneorerror] = useState('')
     const { createuser, googlelogin } = useContext(AuthContext);
     const navigate = useNavigate()
+    useEffect(() => {
+        Aos.init();
+      }, []);
     const handlesubmit = (e) => {
         e.preventDefault()
         setdoneorerror('');
@@ -77,7 +82,7 @@ const Register = () => {
         <div className="pt-32 pb-7 flex flex-col justify-center items-center">
 
             <form onSubmit={handlesubmit}>
-                <div className="relative flex w-[300px] sm:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                <div className="relative flex w-[300px] sm:w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" data-aos="fade-left">
                     <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-orange-600 to-orange-400 bg-clip-border text-white shadow-lg shadow-orange-500/40">
                         <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
                             Register
@@ -159,7 +164,7 @@ const Register = () => {
                             Register
                         </button>
                         <p onClick={handlegooglelogin}
-                            className="mt-5 block w-full select-none rounded-lg bg-gradient-to-tr from-orange-600 to-orange-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                            className="mt-5 block w-full select-none rounded-lg bg-gradient-to-tr from-orange-600 to-orange-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer"
 
                             data-ripple-light="true"
                         >

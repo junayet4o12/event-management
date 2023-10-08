@@ -3,10 +3,16 @@
 // import React from 'react';
 import { AiTwotoneStar, AiOutlineStar } from 'react-icons/ai';
 import Rating from 'react-rating';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 const Clients = ({ client }) => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     const { id, name, photo_url, passion, review, rating, bg_color } = client;
     return (
-        <div>
+        <div  data-aos="flip-left">
             
             <div className="w-[300px] h-full relative rounded-lg" style={{ backgroundColor: bg_color, border: `solid 1px ${bg_color}` }}>
 
