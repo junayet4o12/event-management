@@ -12,15 +12,18 @@ import Details2 from "./Details2";
 import LogIn from "./LogIn";
 import Register from "./Register";
 import PrivateRouts from "./PrivateRouts";
+import Error from "./Error";
 
 const MyRouts = createBrowserRouter([
     {
         path: "/",
         element: <LayOut></LayOut>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                
             },
             {
                 path: '/details/:id',
