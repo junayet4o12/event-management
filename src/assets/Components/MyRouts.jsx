@@ -10,6 +10,8 @@ import Contact from "./Contact";
 import PurchaseItems from "./PurchaseItems";
 import Details2 from "./Details2";
 import LogIn from "./LogIn";
+import Register from "./Register";
+import PrivateRouts from "./PrivateRouts";
 
 const MyRouts = createBrowserRouter([
     {
@@ -23,26 +25,30 @@ const MyRouts = createBrowserRouter([
             {
                 path: '/details/:id',
                 loader : ()=> fetch('/data.json'),
-                element: <Details></Details>
+                element: <PrivateRouts><Details></Details></PrivateRouts>
             },
             {
                 path: '/details2/:id',
                 loader : ()=> fetch('/data.json'),
-                element: <Details2></Details2>
+                element: <PrivateRouts><Details2></Details2></PrivateRouts>
             },
             {
                 path: '/contact',
-                element: <Contact></Contact>
+                element: <PrivateRouts><Contact></Contact></PrivateRouts>
             },
             {
                 path: '/purchased',
                 loader: ()=> fetch('/data.json'),
-                element: <PurchaseItems></PurchaseItems>
+                element: <PrivateRouts><PurchaseItems></PurchaseItems></PrivateRouts>
             },
             {
                 path: '/login',
                 element: <LogIn></LogIn>
-            }
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            },
         ]
     },
 ]);

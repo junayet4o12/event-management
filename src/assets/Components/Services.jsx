@@ -1,14 +1,30 @@
 /* eslint-disable react/prop-types */
 // import React from 'react';
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "./AuthProvider";
+import Swal from "sweetalert2";
 
 const Services = ({ services }) => {
+    const {user} = useContext(AuthContext);
+
     const { id, name,  description, img, bg_color,  button_bg,  margin, price } = services;
 
    
     const btncolor = {
         backgroundColor: button_bg
+    }
+    const handlelogin = () => {
+        if(!user){
+            Swal.fire({
+                position: 'top-center',
+                icon: 'error',
+                title: 'Please Sign in first',
+                showConfirmButton: false,
+                timer: 1000
+            })
+        }
     }
     return (
         <div>
@@ -26,7 +42,7 @@ const Services = ({ services }) => {
                             <h1 className="text-xl font-medium mt-4">Price:<span className="font-semibold"> {price} $</span></h1>
                             <p className="py-6 font-medium">{description.slice(0, 200)}.....</p>
                             <div className="text-end">
-                                <Link to={`/details/${id}`}>
+                                <Link onClick={handlelogin} to={`/details/${id}`}>
                                     <button className="btn btn-primary font-bold text-white border-none" style={btncolor}>See details</button>
                                 </Link>
                             </div>

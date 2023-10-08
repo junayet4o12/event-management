@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../logo1.png';
+import userpic from '../user.png';
 import './Nav.css'
 import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from './AuthProvider';
 const NavBar = () => {
+    const { user, logout } = useContext(AuthContext);
+    console.log(user, logout);
     const navli = <>
         <li><NavLink to='/'>HOME</NavLink></li>
         <li><NavLink to='/purchased'>PURCHASED</NavLink></li>
@@ -30,9 +34,20 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/login'>
-                        <button className="btn bg-gradient-to-br from-[#eae751] to-[#f17807] text-white font-bold border-none px-5">log in</button>
-                    </Link>
+                    {
+                        user ? <>
+                            <div className='mr-5  flex flex-col justify-center items-center'>
+                                <div className='w-10 h-10 rounded-full '><img className='w-full h-full rounded-full ' src={user.photoURL ? user?.photoURL : userpic
+} alt="" /></div>
+                                <p className='text-white font-bold font-sm'>{user?.displayName.split(' ')[0] || 'Undefined'}</p>
+                            </div>
+                            <button onClick={() => logout()} className="btn bg-gradient-to-br from-[#eae751] to-[#f17807] text-white font-bold border-none px-5">log out</button>
+
+                        </> : <Link to='/login'>
+                            <button className="btn bg-gradient-to-br from-[#eae751] to-[#f17807] text-white font-bold border-none px-5">log in</button>
+                        </Link>
+
+                    }
                 </div>
             </div>
         </div>

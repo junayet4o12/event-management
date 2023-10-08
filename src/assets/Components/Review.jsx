@@ -19,7 +19,7 @@ const Review = () => {
         <div className='py-20 max-w-7xl mx-auto'>
             <div className="mb-24 p-4 md:p-10">
                 <h2 className='text-5xl font-bold  mb-4 '>FEED BACK</h2>
-                <p className="text-xl font-semibold text-gray-600">Some reviews of out client who took our services...</p>
+                <p className="text-xl font-semibold text-gray-600">Some reviews of our client who took our services...</p>
             </div>
             <div className="flex flex-wrap justify-center  gap-x-10 gap-y-24">
                 {
