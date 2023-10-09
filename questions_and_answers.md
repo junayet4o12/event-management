@@ -15,7 +15,7 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b> A: `{}`..The first let variable(greeting) and the second variable(greetign) which is not declared are not same. they have spelling mistake. but we console the second one (greetign) and its value is empty object({}). the consoled answer is empty object it means A: `{}`</b></summary>
 <p>
 
 #### Answer: ?
