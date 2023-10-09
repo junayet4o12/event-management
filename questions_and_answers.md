@@ -40,7 +40,7 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>C:'12' . There is no console in this code. But we got a return. And the return value is 12. Cause, the given arguement is 1 and '2' . We sum them in function and return it. the first argument(1) is int. But the second one('2') is string. Generally, when a int is added with an string, it(int) also becomes a string. So, 1(int) and '2's sum is '12'. cause 1  become a string and they return 12 and it is also a string.</b></summary>
 <p>
 
 #### Answer: ?
@@ -66,7 +66,7 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>A: `['🍕', '🍫', '🥑', '🍔']`   Cause, the food value is ['🍕', '🍫', '🥑', '🍔'] we have done many thing in the code like we have made an object which value is first element of food and then we have replaced the value to 🍝. but this change only for info it doesnot make any change in food array. then we console the food. the food value is not change so the consoled ans is ['🍕', '🍫', '🥑', '🍔']</b></summary>
 <p>
 
 #### Answer: ?
