@@ -47,7 +47,7 @@ const Details = () => {
                     <h2 className="text-2xl font-medium">{title}</h2>
                 </div>
                 <div className=" ">
-                    <img className="h-full rounded sm:h-[400px] mx-auto" src={img} alt="" />
+                    <img className=" rounded sm:h-[400px] mx-auto" src={img} alt="" />
                 </div>
                 <p className="text-3xl text-center  p-4 md:w-[700px] mx-auto flex justify-center items-center flex-wrap gap-2" style={textcolor}> <span className="text-2xl font-bold flex justify-center items-center"><span>RATING</span> ({rating}):</span>
                     <Rating
