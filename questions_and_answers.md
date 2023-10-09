@@ -15,7 +15,7 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b> click to see answer</b></summary>
+<details><summary><b> Answer</b></summary>
 <p>
 
 #### Answer: A: `{}`?
@@ -40,7 +40,7 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>click to see answer</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C:'12'
@@ -66,7 +66,7 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>click to see answer</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
@@ -91,7 +91,7 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Click to see answer</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: B: `Hi there, undefined`
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C:3?
 
-<i>Write your explanation here</i>
+<i>count is a let variable and its initial value is 0. then we have an array and its value is [0, 1, 2, 3]. then we make a foreach loop for nums array. this loop take every element of nums. for each element, if the element is truthy the count's value increases by 1. at first come 0 and its a falsy value. so count is not increased but then come 1 its a truthy value so count is increased by 1  and then come 2 and 3 one by one and they are true value. for each value count is increased by 1 and his counting ends in 3, cause there are 3 truthy value in nums array. so the ans is 3</i>
 
 </p>
 </details>
