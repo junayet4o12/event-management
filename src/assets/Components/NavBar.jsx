@@ -37,7 +37,7 @@ const NavBar = () => {
                     {
                         user ? <>
                             <div className='mr-5  flex flex-col justify-center items-center'>
-                                <div className='w-10 h-10 rounded-full '><img className='w-full h-full rounded-full ' src={user.photoURL ? user?.photoURL : userpic
+                                <div className='w-10 h-10 rounded-full bg-white'><img className='w-full h-full rounded-full ' src={ user?.photoURL ? user?.photoURL : userpic
 } alt="" /></div>
                                 <p className='text-white font-bold font-sm'>{user?.displayName?.split(' ')[0] || 'Undefined'}</p>
                             </div>
