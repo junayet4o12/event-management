@@ -15,12 +15,12 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b> A: `{}`----The first let variable(greeting) and the second variable(greetign) which is not declared are not same. they have spelling mistake. but we console the second one (greetign) and its value is empty object({}). the consoled answer is empty object it means A: `{}`</b></summary>
+<details><summary><b> click to see answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`?
 
-<i>Write your explanation here</i>
+<i>The first let variable(greeting) and the second variable(greetign) which is not declared are not same. they have spelling mistake. but we console the second one (greetign) and its value is empty object({}). the consoled answer is empty object it means A: `{}`</i>
 
 </p>
 </details>
@@ -40,12 +40,12 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>C:'12'----  There is no console in this code. But we got a return. And the return value is 12. Cause, the given arguement is 1 and '2' . We sum them in function and return it. the first argument(1) is int. But the second one('2') is string. Generally, when a int is added with an string, it(int) also becomes a string. So, 1(int) and '2's sum is '12'. cause 1  become a string and they return 12 and it is also a string.</b></summary>
+<details><summary><b>click to see answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C:'12'
 
-<i>Write your explanation here</i>
+<i>There is no console in this code. But we got a return. And the return value is 12. Cause, the given arguement is 1 and '2' . We sum them in function and return it. the first argument(1) is int. But the second one('2') is string. Generally, when a int is added with an string, it(int) also becomes a string. So, 1(int) and '2's sum is '12'. cause 1  become a string and they return 12 and it is also a string.</i>
 
 </p>
 </details>
@@ -66,12 +66,12 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>  A: `['🍕', '🍫', '🥑', '🍔']`----    Cause, the food value is ['🍕', '🍫', '🥑', '🍔'] we have done many thing in the code like we have made an object which value is first element of food and then we have replaced the value to 🍝. but this change only for info it doesnot make any change in food array. then we console the food. the food value is not change so the consoled ans is ['🍕', '🍫', '🥑', '🍔']</b></summary>
+<details><summary><b>click to see answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>Cause, the food value is ['🍕', '🍫', '🥑', '🍔'] we have done many thing in the code like we have made an object which value is first element of food and then we have replaced the value to 🍝. but this change only for info it doesnot make any change in food array. then we console the food. the food value is not change so the consoled ans is ['🍕', '🍫', '🥑', '🍔']</i>
 
 </p>
 </details>
@@ -91,7 +91,7 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b></b></summary>
+<details><summary><b>Click to see answer</b></summary>
 <p>
 
 #### Answer: B: `Hi there, undefined`
