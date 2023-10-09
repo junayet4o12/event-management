@@ -91,12 +91,12 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b></b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>Because, We make a funcition name sayHi and it takes a parameter(name). Then we return  Hi there, and the name in a template string. and we call the function in console out side of function. so the return value of function is shown in console. the out put is Hi there, undefined. cause the name parameter has not any value and its value is not given in any arguments and there is no arugement where the function called so we get undefined in name's output.</i>
 
 </p>
 </details>
